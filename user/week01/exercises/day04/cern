@@ -33,7 +33,7 @@ name="z54" href="../DataSources/WWW/Servers.html">W3 servers</a>, etc.
 name="46" href="Help.html">Help</a>
 <dd> on the browser you are using
 <dt><a
-name="13" href="Status.html">Software Products</a>
+name="13" href="Status.html">Software Products</a><dt></dt>
 <dd> A list of W3 project
 components and their current state.</dd>
 (e.g. <a
