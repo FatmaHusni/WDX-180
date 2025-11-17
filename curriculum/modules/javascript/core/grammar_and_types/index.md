@@ -1,62 +1,7 @@
 ---
-title: Week 07 | JavaScript Core 1
+title: JavaScript - Grammar and types
+based-on: /curriculum/modules/mdn/web/javascript/guide/grammar_and_types/index.md
 ---
-
-<hr class="mb-0">
-
-<h1 id="{{ Week 07-JavaScript Core 1 | slugify }}">
-  <span class="week-prefix">Week 07 |</span> JavaScript Core 1
-</h1>
-
-<img src="assets/header--andrew-neel-cckf4TsHAuw-unsplash.jpg" />
-
-<div class="week-controls">
-
-  {% assign week_num = 07 | to_integer %}
-
-  <h2 class="week-controls__previous_week">
-
-    {% if week_num > 0 %}
-
-      {% assign previous_week_num = 07 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
-
-      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
-    {% endif %}
-
-  </h2>
-
-  <span>Updated: 17/11/2025</span>
-
-  <h2 class="week-controls__next_week">
-
-    {% if week_num < 36 %}
-
-      {% assign next_week_num = 07 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
-
-      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
-    {% endif %}
-
-  </h2>
-
-</div>
-
-<!-- VERSION -->
-<hr style="margin-bottom:0" />
-<div class="center opacity-50 opacity-100:hover">
-  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
-</div>
-<!-- VERSION -->
-
----
-
-<!-- Week 07 - Day 1 | JavaScript - Grammar and types -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 07 - Day 1</span> | JavaScript - Grammar and types</h2>
-  </summary>
-
-<!-- Schedule -->
 
 ### Study Plan
 
@@ -80,8 +25,6 @@ A semicolon is not necessary after a statement if it is written on its own line.
 
 > ECMAScript also has rules for automatic insertion of semicolons ([ASI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion){:target="_blank"}) to end statements. (For more information, see the detailed reference about JavaScript's [lexical grammar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar){:target="_blank"}.)
 
-
-
 It is considered best practice, however, to always write a semicolon after a statement, even when it is not strictly needed. This practice reduces the chances of bugs getting into the code.
 
 The source text of JavaScript script gets scanned from left to right, and is converted into a sequence of input elements which are _tokens_, _control characters_, _line terminators_, _comments_, or [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace){:target="_blank"}. (Spaces, tabs, and newline characters are considered whitespace.)
@@ -101,8 +44,6 @@ The syntax of **comments** is the same as in C++ and in many other languages:
 You can't nest block comments. This often happens when you accidentally include a `*/` sequence in your comment, which will terminate the comment.
 
 <!-- ```js-nolint example-bad -->
-
-
 ```js
 /* You can't, however, /* nest comments */ SyntaxError */
 ```
@@ -119,8 +60,6 @@ Comments behave like whitespace, and are discarded during script execution.
 >
 > This is called **hashbang comment** syntax, and is a special comment used to specify the path to a particular JavaScript engine that should execute the script. See [Hashbang comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#hashbang_comments){:target="_blank"} for more details.
 
-
-
 **Declarations**
 
 JavaScript has three kinds of variable declarations.
@@ -136,7 +75,7 @@ JavaScript has three kinds of variable declarations.
 
 You use variables as symbolic names for values in your application. The names of variables, called [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier){:target="_blank"}, conform to certain rules.
 
-A JavaScript identifier usually starts with a letter, underscore (`_`), or dollar sign (`). Subsequent characters can also be digits (`0` – `9`). Because JavaScript is case sensitive, letters include the characters `A` through `Z` (uppercase) as well as `a` through `z` (lowercase).
+A JavaScript identifier usually starts with a letter, underscore (`_`), or dollar sign (`$`). Subsequent characters can also be digits (`0` – `9`). Because JavaScript is case sensitive, letters include the characters `A` through `Z` (uppercase) as well as `a` through `z` (lowercase).
 
 You can use most Unicode letters such as `å` and `ü` in identifiers. (For more details, see the [lexical grammar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#identifiers){:target="_blank"} reference.) You can also use [Unicode escape sequences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#string_literals){:target="_blank"} to represent characters in identifiers.
 
@@ -167,8 +106,6 @@ In essence, `let x = 42` is equivalent to `let x; x = 42`.
 `const` declarations always need an initializer, because they forbid any kind of assignment after declaration, and implicitly initializing it with `undefined` is likely a programmer mistake.
 
 <!-- ```js-nolint example-bad -->
-
-
 ```js
 const x; // SyntaxError: Missing initializer in const declaration
 ```
@@ -259,7 +196,7 @@ Consequently, you can access global variables declared in one window or frame fr
 
 **Constants**
 
-You can create a read-only, named constant with the [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const){:target="_blank"} keyword. The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign (`), and can contain alphabetic, numeric, or underscore characters.
+You can create a read-only, named constant with the [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const){:target="_blank"} keyword. The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign (`$`), and can contain alphabetic, numeric, or underscore characters.
 
 ```js
 const PI = 3.14;
@@ -270,8 +207,6 @@ A constant cannot change value through assignment or be re-declared while the sc
 You cannot declare a constant with the same name as a function or variable in the same scope. For example:
 
 <!-- ```js-nolint example-bad -->
-
-
 ```js
 // THIS WILL CAUSE AN ERROR
 function f() {}
@@ -366,8 +301,6 @@ In the case that a value representing a number is in memory as a string, there a
 > [!NOTE]
 > Additionally, a best practice for `parseInt` is to always include the _radix_ parameter. The radix parameter is used to specify which numerical system is to be used.
 
-
-
 ```js
 parseInt("101", 2); // 5
 ```
@@ -375,8 +308,6 @@ parseInt("101", 2); // 5
 An alternative method of retrieving a number from a string is with the `+` (unary plus) operator. This implicitly performs [number conversion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_coercion){:target="_blank"}, which is the same process as the [Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number()){:target="_blank"} function.
 
 <!-- ```js-nolint -->
-
-
 ```js
 "1.1" + "1.1"; // '1.11.1'
 (+"1.1") + (+"1.1"); // 2.2
@@ -385,148 +316,4 @@ An alternative method of retrieving a number from a string is with the `+` (unar
 
 <!-- ### Exercises -->
 
-
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 07 - Day 2 | Work in Progress -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 07 - Day 2</span> | Work in Progress</h2>
-  </summary>
-
-<!-- Schedule -->
-
-### Study Plan
-
-#### Work in progress...
-
-
-
-  **Stay tuned**
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 07 - Day 3 | Work in Progress -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 07 - Day 3</span> | Work in Progress</h2>
-  </summary>
-
-<!-- Schedule -->
-
-### Study Plan
-
-#### Work in progress...
-
-
-
-  **Stay tuned**
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 07 - Day 4 | Work in Progress -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 07 - Day 4</span> | Work in Progress</h2>
-  </summary>
-
-<!-- Schedule -->
-
-### Study Plan
-
-#### Work in progress...
-
-
-
-  **Stay tuned**
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 07 - Day 5 | Work in Progress -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 07 - Day 5</span> | Work in Progress</h2>
-  </summary>
-
-<!-- Schedule -->
-
-### Study Plan
-
-#### Work in progress...
-
-
-
-  **Stay tuned**
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-
-<hr class="mt-1">
-
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-
-
----
-
-<!-- COMMENTS: -->
-<script src="https://utteranc.es/client.js"
-  repo="in-tech-gration/WDX-180"
-  issue-term="pathname"
-  theme="github-dark"
-  crossorigin="anonymous"
-  async>
-</script>
+  <!-- SGEN:META:PROGRESS:task=Study the Grammar and Types -->
