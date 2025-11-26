@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+:root {
+    --background-color: #282828;
+    --text-color: #d0d0d0;
+    --placeholder-text-color: #767676;
+    --border-color:  #4c4c4c;
+    --border-hover-color: #8f8f8f;
+    --border-focus-color: #7c9dbd;
+    --border-error-color: #862e2a;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    border: var(--border-color) 2px solid;
+    width: 800px;
+    height: 40px;
+    padding: 10px;
+}
+input[placeholder] {
+    color: var(--placeholder-text-color);
+}
+input:hover {
+    color: var(--border-hover-color);
+}
+input:focus {
+    color: var(--border-focus-color);
+}
+input.error {
+    color: var(--border-error-color);
+}
+   </style>
+</head>
+<body>
+   <main>
+    <article id="form">
+        <h2>custom form</h2>
+    <form action="./W5D1/" method="post">
+        <fieldset>
+            <p>
+            <label for="text">Enter your message:</label>
+            <br><br>
+            <input type="text" id="text" name="text" placeholder="placeholder text here" size="30" pattern="[A-Z][a-z][!,@,_,$()]" required>
+            </p>
+            <p>
+            <label for="text">Enter your message:</label>
+            <br><br>
+            <input type="text" id="text2" name="text" placeholder="Border color with value typed" maxlength="30" pattern="[A-Z][a-z][!,@,_,$()]" required>
+            </p>
+            <p>
+            <label for="text">Enter your message:</label>
+            <br><br>
+            <input type="text" id="text3" name="text" placeholder="Border color on mouse hover" maxlength="30" pattern="[A-Z][a-z][!,@,_,$()]" required>
+            </p>
+            <p>
+            <label for="text">Enter your message:</label>
+            <br><br>
+            <input type="text" id="text4" name="text" placeholder="Border color on focus" maxlength="30" pattern="[A-Z][a-z][!,@,_,$()]" required>
+            </p>
+            <p>
+            <label for="text">Enter your message:</label>
+            <br><br>
+            <input type="text" id="text5" name="text" placeholder="Ops! There's a validation error! More characters that the allowed" maxlength="30" pattern="[A-Z][a-z][!,@,_,$()]" required>
+            </p>
+        </fieldset>
+    </form>
+    </article>
+   </main>
+</body>
+</html>
