@@ -17,3 +17,6 @@ Gemfile
 Gemfile.lock
 .sass-cache/
 .jekyll-metadata
+
+# Ignore the 'grocify' repository folder
+grocify/
