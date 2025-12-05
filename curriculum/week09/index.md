@@ -25,7 +25,7 @@ title: Week 09 | JavaScript Core 3
 
   </h2>
 
-  <span>Updated: 2/12/2025</span>
+  <span>Updated: 5/12/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -1292,26 +1292,45 @@ In addition to objects that are predefined in the browser, you can define your o
 
 <hr class="mt-1">
 
-<!-- Week 09 - Day 5 | Work in Progress -->
+<!-- Week 09 - Day 5 | JavaScript - Array & Object Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 09 - Day 5</span> | Work in Progress</h2>
+      <span class="summary-day">Week 09 - Day 5</span> | JavaScript - Array & Object Practice</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
 
 ### Study Plan
 
-#### Work in progress...
+<!-- WDX:SGEN:PROGRESS:task=Watch 'JavaScript Value vs. Reference (Primitives vs. Objects)' -->
 
 
-
-  **Stay tuned**
+- [Watch **JavaScript Value vs. Reference (Primitives vs. Objects)**](https://www.youtube.com/watch?v=r5rYoJFWfN0){:target="_blank"}
+  - Level: Beginner
+  - Duration: 21min
+  - Captions: Yes
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  ![](./assets/coder-archer.jpg)
+
+  **Let's practice Arrays and Objects!**
+
+  Download the following file and try to solve all the exercises:
+
+  [Array & Object Practice](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week09/assets/Object.Exercises.js){:target="_blank"}
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week09/progress/progress.draft.w09.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
