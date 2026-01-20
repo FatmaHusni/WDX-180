@@ -1,4 +1,3 @@
-git config
 [submodule "curriculum/modules/javascript/denepo/welcome-to-javascript"]
 	path = curriculum/modules/javascript/denepo/welcome-to-javascript
 	url = git@github.com:in-tech-gration/welcome-to-javascript.git
