@@ -25,11 +25,11 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 9/6/2025</span>
+  <span>Updated: 19/1/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 13 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 13 | Intermediate JavaScript
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -79,10 +86,11 @@ title: Week 13 | Intermediate JavaScript
   - Servers that return JSON data:
     - [Chuck Norris Jokes](https://api.chucknorris.io/jokes/random){:target="_blank"}
     - [Cat Facts](https://catfact.ninja/fact){:target="_blank"}
+    - Check out the **Working offline** section below for running a local JSON server even when you have no Internet connectivity.
 
   - Lectures Code:
     - [Promises](./assets/intechgration-io-promises.zip){:target="_blank"}
-    - [Functions: The Chickend and the Eff](./assets/intechgration-io-functions-chicken-egg.zip){:target="_blank"}
+    - [Functions: The Chicken and the Egg](./assets/intechgration-io-functions-chicken-egg.zip){:target="_blank"}
 
   - Lectures Diagrams:
     - [Promises (in real life)](./assets/1_2lVkfUxpad7Y_2Y0K3ToLQ.png){:target="_blank"}
@@ -91,6 +99,22 @@ title: Week 13 | Intermediate JavaScript
     - [Definition of 'Pending'](./assets/Google.Define.Pending.jpg){:target="_blank"}
     - [Excalidraw](./assets/Promise.Diagram.png){:target="_blank"}
     - [Server-Client Headers](./assets/Server.Client.Headers.png){:target="_blank"}
+
+  **Working offline**
+
+  What happens when one of the JSON servers used for practice (e.g. `catfact.ninja`, `api.chucknorris.io`, etc.) are down?
+
+  What happens if you want to practice connecting to a JSON server through JavaScript when there's no Internet connectivity?
+
+  No need to worry. You can always use the `json-server` for that! All you need is to run the following command while you are still connected to the Internet: `npx json-server db.json` 
+
+  The command will do 2 things: It will ask you to install the `json-server` on your machine and then create a sample `db.json` file under the current folder and start running a JSON server under the default port (3000). The server is responsible for dynamically serving the contents of the `db.json` file through different routes: `/posts`, `/comments`, `/profile`.
+
+  You can now practice by connecting to the server on the default port, or run it on a custom port using: `npx json-server db.json --port <CUSTOM_PORT_NUMBER>`.
+
+  You can study the `db.json` file structure and add any custom JSON data you like to practice on. You can also run `npx json-server --help` to check all the available features of the `json-server` module. 
+
+  Happy (offline) hacking! 
 
 <!-- Summary -->
 
@@ -102,7 +126,6 @@ title: Week 13 | Intermediate JavaScript
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -185,6 +208,34 @@ title: Week 13 | Intermediate JavaScript
   - The `CSSMediaRule & CSSKeyframeRule Interfaces`
     - `media`
     - `keyText`
+
+  **FAQ**
+
+  > Here are some questions that we've accumulated from students going over the topics covered in this module.
+
+
+
+  - **Question:** _What does "paint" mean? Is it a feature of the browser? Does the browser use `Canvas` to paint the DOM? How does it "paint" the pixels?_
+    - **Answer:** The term "paint" refers to an internal Browser feature. The way browsers "paint" everything on the main browser window is something that is hidden away from us. It is not to be confused with the `Canvas API` which is an HTML element with drawing/painting capabilities and an accompanying JavaScript API, and a topic that we will covered in a future Module.
+  
+  - **Question:** _Is `CSSStyleDeclaration` a special type of object? I feel like I don't fully understand the object model in JS._
+    - **Answer:** `CSSStyleDeclaration` is actually an [`Interface`](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration){:target="_blank"}, a kind of a blueprint, if you will, based on which a special type of Object is created. This is a concept that will be covered in upcoming Modules of the Intermediate and Advanced parts of the course.
+
+  - **Question:** _When we use JavaScript, are the CSS styles applied inline? Because it seems so. If we have a rule in our project not to use inline styling, how are we going to handle this? Should we use CSS classes instead?_
+    - **Answer:** When you use the `.style` Element property, you are actually applying inline styling to the Element. But, that's not always a bad thing, and it's a widely used pattern when styling must be updated dynamically (via JS).
+
+  - _Should we use CSS classes instead?_: That's another approach that you can use if you definitely want to avoid inline styling for some reason. Here's one way of injecting CSS styling by dynamically creating a `<style>` element and appending it to the `<head>` element of our page:
+
+  ```js
+  const style = document.createElement("style");
+  style.textContent = `
+    .someClass { 
+      background: black;
+      color: white;
+    }
+  `
+  document.head.appendChild(style);
+  ```
 
 <!-- Summary -->
 
@@ -289,7 +340,6 @@ title: Week 13 | Intermediate JavaScript
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 ### Extra Resources
 
@@ -404,7 +454,6 @@ title: Week 13 | Intermediate JavaScript
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
@@ -452,7 +501,6 @@ title: Week 13 | Intermediate JavaScript
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d05.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
