@@ -1,0 +1,6 @@
+---
+title: BUG JOURNAL
+
+
+
+
