@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>30DaysOfJavaScript:21 Day </title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Asabeneh Yetayeh challenges in</h1><h1 id="yes">2020</h1>
+		<h2>30DaysOfJavaScript Challenge</h2>
+		<h3 id="datetime"></h3>
+		<ul>
+			<li>30DaysOfPython Challenge Done</li>
+			<li>30DaysOfJavaScript Challenge Ongoing</li>
+			<li>30DaysOfReact Challenge Coming</li>
+			<li>30DaysOfFullStack Challenge Coming</li>
+			<li>30DaysOfDataAnalysis Challenge Coming</li>
+			<li>30DaysOfReactNative Challenge Coming</li>
+			<li>30DaysOfMachineLearning Challenge Coming</li>
+		</ul>
+	</div>
+
+	<script>
+		function updateDateTime() {
+			const now = new Date();
+			const currentDateTime = now.toLocaleString();
+			document.querySelector('#datetime').textContent = currentDateTime;
+		}
+
+		setInterval(updateDateTime, 1000);
+	</script>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>
