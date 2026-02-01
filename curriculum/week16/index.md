@@ -25,11 +25,11 @@ title: Week 16 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 28/1/2025</span>
+  <span>Updated: 29/1/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 16 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 16 | Intermediate JavaScript
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -390,8 +397,7 @@ title: Week 16 | Intermediate JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Event Debugging & Tools
-  - **Part 2:** Objects, Object.freeze, Object Creators
+  - Objects, Object.freeze, Object Creators
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day03){:target="_blank"}
 
@@ -416,25 +422,25 @@ title: Week 16 | Intermediate JavaScript
 
 ### Summary
 
-Part 1:
-
-- 1. **Discussion on Reference vs Copy**: the difference between reference and copy when assigning values to variables in JavaScript.
-
-- 2. **Use of `const` keyword**: using the `const` keyword to declare variables that should not be reassigned, and how it can help avoid unexpected changes to variable values.
-
-- 3. **Example with objects and primitives**: examples with objects and primitives (like numbers) to illustrate the difference between reference and copy.
-
-- 4. **Understanding function calls**: understanding what value a function call returns.
-
-Part 2:
-
 Here's a brief summary of the main points covered:
 
-- 1. **Creating objects**: in JavaScript, objects can be created using the `new` keyword followed by a function name.
+- **Discussion on Reference vs Copy**: the difference between reference and copy when assigning values to variables in JavaScript.
 
-- 2. **Constructor functions**: introducing the concept of constructor functions, which are special types of functions that return an object when called with the `new` keyword.
+<!-- - **Use of `const` keyword**: using the `const` keyword to declare variables that should not be reassigned, and how it can help avoid unexpected changes to variable values. -->
 
-- 3. **Using constructor functions to create objects**: The lecturer demonstrates how to use a constructor function to create multiple objects with similar properties and methods.
+
+
+- **Example with objects and primitives**: examples with objects and primitives (like numbers) to illustrate the difference between reference and copy.
+
+<!-- - **Understanding function calls**: understanding what value a function call returns. -->
+
+
+
+- **Creating objects**: in JavaScript, objects can be created using the `new` keyword followed by a function name.
+
+- **Constructor functions**: introducing the concept of constructor functions, which are special types of functions that return an object when called with the `new` keyword.
+
+- **Using constructor functions to create objects**: The lecturer demonstrates how to use a constructor function to create multiple objects with similar properties and methods.
 
 Some key takeaways from this lecture include:
 
@@ -503,12 +509,12 @@ If you're new to JavaScript or programming in general, this lecture might be hel
 
 ### Study Plan
 
+  First, go through the [Murdle tutorial](https://murdle.com/?mode=tutorial){:target="_blank"}. It's really fun and will help you understand the JavaScript tasks mentioned in the lecture.
+
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Solving a Murdle Mystery / Solving Click Event Mysteries 
-  - **Part 2:** Object Creators and their Toolset (and `this`)
-
-  Go through the [Murdle tutorial](https://murdle.com/?mode=tutorial){:target="_blank"}
+  - Solving Click Event Mysteries (JavaScript) based on the [Murdle Mystery](https://murdle.com/){:target="_blank"} game.
+  - Object Creators and their Toolset (and `this`)
 
   You can find the lecture code [here for part 1](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part1-murlde-mystery/){:target="_blank"} and [here for part 2](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part2-objects/){:target="_blank"}
 
