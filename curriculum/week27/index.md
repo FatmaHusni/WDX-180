@@ -25,7 +25,7 @@ title: Week 27 | More Web APIs
 
   </h2>
 
-  <span>Updated: 12/4/2026</span>
+  <span>Updated: 14/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -64,9 +64,7 @@ title: Week 27 | More Web APIs
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - Drag and Drop API
+  Watch the [lecture on the Drag and Drop Browser API](https://youtu.be/hYum59UJ2vk){:target="_blank"}.
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week27/assets/day01/drag-and-drop.html){:target="_blank"}
 
