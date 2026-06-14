@@ -431,26 +431,31 @@ load_script_js:
   Route:
 
   ```javascript
-  const totalRecords = productRepository.count();
-  const totalPages = Math.ceil(totalRecords / limit);
-  ```
+  // routes/products.js
+  const productRepository = require("../db/productRepository");
+  // ...
+  router.get("/", (req,res)=>{
 
-  Pass:
+    const totalRecords = productRepository.count();
+    const totalPages = Math.ceil(totalRecords / limit);
+    // ...
+  
+    // Pass `totalPages` to the product list template:
+    res.render('products/list',
+        {
+          // ...
+          products,
+          page,
+          totalPages
+        }
+    );
 
-  ```javascript
-  res.render('products/list',
-      {
-        // ...
-        products,
-        page,
-        totalPages
-      }
-  );
+  });
   ```
 
 # Part 9 — Rendering Pagination Links
 
-  View:
+  View: `(/views/products/list.ejs)`
 
   ```html
   <nav>
@@ -493,6 +498,8 @@ load_script_js:
   ```
 
 # Part 10 — Previous and Next Links
+
+  Update: `views/products/list.ejs`:
 
   Previous:
 
@@ -658,6 +665,8 @@ load_script_js:
 
   We'll stick with OFFSET pagination for now because it's easier to learn.
 
+  Challenge: Try to implement the Cursor Pagination algorithm.
+
 # Part 14 — Improving User Experience
 
   Show:
@@ -738,7 +747,7 @@ load_script_js:
   total / limit
   ```
 
-  Use:
+  ✅ Use:
 
   ```javascript
   Math.ceil(...)
