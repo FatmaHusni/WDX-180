@@ -9,7 +9,7 @@ load_script_js:
 
 # Authentication & Login Systems
 
-  https://deepwiki.com/expressjs/express/7-application-patterns-and-examples#authentication-pattern
+<!-- https://deepwiki.com/expressjs/express/7-application-patterns-and-examples#authentication-pattern -->
 
 ## Knowing Who the User Is
 
