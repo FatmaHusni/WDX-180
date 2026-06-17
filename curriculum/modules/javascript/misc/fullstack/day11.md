@@ -292,6 +292,8 @@ load_script_js:
   </form>
   ```
 
+  Update `/index.js`:
+
   ```js
   app.get('/login', ( req, res )=>{
     res.render("login", {
@@ -308,7 +310,7 @@ load_script_js:
 
 # Part 7 — Verifying Credentials
 
-  `db/userRepository.js`:
+  Create a file `db/userRepository.js`:
 
   ```js
   const db = require('./db');
@@ -329,9 +331,13 @@ load_script_js:
   };  
   ```
 
-  Route:
+  Route (`/index.js`):
 
   ```javascript 
+  const userRepository = require("./db/userRepository");
+
+  // ...
+
   app.post('/login', async (req, res) => {
 
     const { email, password } = req.body;
@@ -391,12 +397,14 @@ load_script_js:
   npm install express-session 
   ```
 
-  Configure:
+  Configure (`/index.js`):
 
   ```javascript 
-  const { loadEnvFile } = require('node:process');
   const session = require('express-session');
+  const { loadEnvFile } = require('node:process');
+  loadEnvFile();
 
+  // Use Session Middleware:
   app.use(
       session({
           secret: process.env.SESSION_SECRET,
@@ -448,7 +456,7 @@ load_script_js:
 
   ```js
   app.post('/login', async (req, res) => {
-    // ...
+    // Login succeeds.
     req.session.userId = user.id; 
     res.send("Logged in successfully");
   });
@@ -539,14 +547,12 @@ load_script_js:
 
 # Part 13 — Logout
 
-  Route:
+  Create a new route (`/index.js`):
 
   ```javascript 
   app.get('/logout', (req,res) => {
-    req.session.destroy(() => {
-      res.redirect(
-          '/login'
-      );
+    req.session.destroy(() => { // Destroy Session...
+      res.redirect('/login'); // ...then redirect user to the Login page
     });
     }
   );
@@ -564,7 +570,7 @@ load_script_js:
 
 # Part 14 — Displaying User Information
 
-  Middleware:
+  Middleware (`/index.js`):
 
   ```javascript 
   app.use((req,res,next) => {
@@ -573,7 +579,7 @@ load_script_js:
   });
   ```
 
-  View:
+  View (`/views/layout.ejs`):
 
   ```html 
   <% if ( userId ) { %>
@@ -726,15 +732,14 @@ load_script_js:
   /products
   ```
 
-Warning: Make sure to stop users from registering an account with an email that already exists. This is where SQL `Constraints` protect the integrity of our Database.
+  Warning: Make sure to stop users from registering an account with an email that already exists. This is where SQL `Constraints` protect the integrity of our Database.
 
-Also, don't forget to handle the error cases where a use might try to register with an email that already exists. Gracefully handle the error and provide a good User eXperience to the user while not revealing too much sensitive information. For example, `Error registering user` might be a safer bet than `Email already exists`.
-
-Congratulations.
-
-You've just built the foundation of nearly every web application that exists.
+  Also, don't forget to handle the error cases where a use might try to register with an email that already exists. Gracefully handle the error and provide a good User eXperience to the user while not revealing too much sensitive information. For example, `Error registering user` might be a safer bet than `Email already exists`.
 
 # Key Takeaways
+
+  Congratulations!
+  You've just built the foundation of nearly every web application that exists.
 
   Today you learned:
 
