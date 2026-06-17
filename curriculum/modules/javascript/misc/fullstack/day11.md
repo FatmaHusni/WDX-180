@@ -208,6 +208,28 @@ load_script_js:
   Password
   ```
 
+  Let's see an example of hashing a password and then 
+  verifying it:
+
+  ```js
+  // REGISTRATION
+  const user = "Ada";
+  const password = "1234";
+  const hash = await bcrypt.hash(password, 10);
+  // At this state, we should save the hash to the Database
+  // and connect it with user 'Ada'
+
+  // LOGIN
+  const userInput = "Ada";
+  let userPass = "1234";
+  const result = await bcrypt.compare(userPass, hash);
+  // result is true in this case, since stored hash and hash created from userPass match.
+
+  userPass = "123";
+  const notAMatch = await bcrypt.compare(userPass, hash);
+  // Since the input password "123" is different from "1234", the comparison will fail.
+  ```
+
 # Part 4 — Creating a Users Table
 
   Schema:
@@ -582,11 +604,15 @@ load_script_js:
   View (`/views/layout.ejs`):
 
   ```html 
-  <% if ( userId ) { %>
-    Logged In
-  <% } else { %>
-    Logged out
-  <% } %>
+  <nav>
+    <% if ( userId ) { %>
+      Logged In
+      <a href="/logout">Logout</a>
+    <% } else { %>
+      Logged out
+      <a href="/login">Login</a>
+    <% } %>
+  </nav>
   ```
 
   Navigation can now adapt.
