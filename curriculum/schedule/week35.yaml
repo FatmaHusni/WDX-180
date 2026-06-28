@@ -1,19 +1,20 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Mini CMS"
-# header_image: week35/header.jpg
+title: "Full Stack Project"
+header_image: week34/mini.cms.jpg
+version: 2.0
 schedule: 
   days:
-    1: # MiniCMS
+    1: # 
       # file://./../modules/javascript/misc/_w35d01/_w35d01.md
       module: javascript/misc/_w35d01/_w35d01.md
-    2: # MiniCMS
+    2: # 
       # file://./../modules/javascript/misc/_w35d02/_w35d02.md
       module: javascript/misc/_w35d02/_w35d02.md
-    3: # Promises
+    3: # 
       # file://./../modules/javascript/misc/_w35d03/_w35d03.md
       module: javascript/misc/_w35d03/_w35d03.md
-    4: # Practice Day
+    4: # 
       # file://./../modules/javascript/misc/_w35d04/_w35d04.md
       module: javascript/misc/_w35d04/_w35d04.md
     5: # 

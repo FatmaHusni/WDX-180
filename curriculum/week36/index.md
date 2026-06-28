@@ -1,11 +1,11 @@
 ---
-title: Week 36 | Mini CMS
+title: Week 36 | Full Stack Project
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 36-Mini CMS | slugify }}">
-  <span class="week-prefix">Week 36 |</span> Mini CMS
+<h1 id="{{ Week 36-Full Stack Project | slugify }}">
+  <span class="week-prefix">Week 36 |</span> Full Stack Project
 </h1>
 
 <img src="assets/mini.cms.jpg" />
@@ -25,7 +25,7 @@ title: Week 36 | Mini CMS
 
   </h2>
 
-  <span>Updated: 30/6/2025</span>
+  <span>Updated: 1/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -40,74 +40,61 @@ title: Week 36 | Mini CMS
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
-<!-- Week 36 - Day 1 | Mini CMS Project -->
+<!-- Week 36 - Day 1 | Full Stack Project - Part 11 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 1</span> | Mini CMS Project</h2>
+      <span class="summary-day">Week 36 - Day 1</span> | Full Stack Project - Part 11</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  Study Part 11 of the Full Stack Project series:
 
-  - **Part 1:** Creating a POST Controller for handling the creation of new Blog posts
-  - **Part 2:** Creating a View and a Controller for displaying all the available Blog posts in our Database.
+  **Authentication & Login Systems**
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/85d63328668637dec30266c944dc5da927770f2a){:target="_blank"}
+  By the end of this lesson, students will be able to:
 
-  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
+  * Understand authentication fundamentals
+  * Understand sessions
+  * Understand cookies
+  * Build login forms
+  * Hash passwords securely
+  * Verify user credentials
+  * Create authenticated sessions
+  * Protect routes
+  * Implement logout functionality
+  * Understand common authentication vulnerabilities
 
-  **References & Resources:**
-
-  - [SQL Constraints](https://www.tutorialspoint.com/sqlite/sqlite_constraints.htm){:target="_blank"}  
-  - [HTTP Status Codes Reference](https://httpstatuses.io/){:target="_blank"}  
-  - Date: [toLocaleTimeString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString){:target="_blank"}, [toLocaleDateString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString){:target="_blank"}
-
-<!-- Summary -->
-
-### Exercises
-
-  **CHALLENGE:** Find out how you can automatically redirect the user to the newly created Post page.
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week36/progress/progress.draft.w36.d01.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 36 - Day 2 | Practice Day -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 36 - Day 2</span> | Practice Day</h2>
-  </summary>
-
-### Schedule
-
-  - **Practice on the topics and share your questions**
-
-### Study Plan
-
-  Today is practice day. Practice on the topics covered so far
-  and share your thoughts, questions and insights.
-
-  Happy hacking!
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - ➡️ **Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}**
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -121,38 +108,51 @@ title: Week 36 | Mini CMS
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 3 | Authentication -->
+<!-- Week 36 - Day 2 | Full Stack Project - Part 12 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 3</span> | Authentication</h2>
+      <span class="summary-day">Week 36 - Day 2</span> | Full Stack Project - Part 12</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  ![](./assets/day03/knight.guard.jpg)
+  Study Part 12 of the Full Stack Project series:
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  **Authorization, Roles & Permissions**
 
-  - **Part 1:** Work on the Home Page Controller
-  - **Part 2:** Authentication
+  By the end of this lesson, students will be able to:
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/7ae3568842a082682b7c363eff0bd00ba856f486){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w36d03/assets/day03/diagrams){:target="_blank"}.
+  * Understand authorization
+  * Implement user roles
+  * Restrict route access
+  * Build authorization middleware
+  * Understand role hierarchies
+  * Hide unauthorized UI elements
+  * Prevent privilege escalation
+  * Understand ownership-based permissions
+  * Design scalable permission systems
 
-  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
-
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
-
-  - Authentication (AuthN) vs Authorization (AuthZ)  
-    - [https://www.cloudflare.com/learning/access-management/authn-vs-authz/](https://www.cloudflare.com/learning/access-management/authn-vs-authz/){:target="_blank"}
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - ➡️ **Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}**
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -166,23 +166,52 @@ title: Week 36 | Mini CMS
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 4 | Practice Day -->
+<!-- Week 36 - Day 3 | Full Stack Project - Part 13 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 4</span> | Practice Day</h2>
+      <span class="summary-day">Week 36 - Day 3</span> | Full Stack Project - Part 13</h2>
   </summary>
 
 ### Schedule
 
+  - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Today is practice day. Practice on the topics covered so far
-  and share your thoughts, questions and insights.
+  Study Part 13 of the Full Stack Project series:
 
-  Happy hacking!
+  **Validation, Error Handling & Defensive Programming**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand validation fundamentals
+  * Validate input safely
+  * Separate validation from business logic
+  * Handle application errors gracefully
+  * Create custom error middleware
+  * Understand operational vs programmer errors
+  * Build reusable validators
+  * Display validation feedback
+  * Understand defensive programming
+  * Design more reliable systems
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - ➡️ **Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}**
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -196,62 +225,115 @@ title: Week 36 | Mini CMS
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 5 | Protected Routes -->
+<!-- Week 36 - Day 4 | Full Stack Project - Part 14 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 5</span> | Protected Routes</h2>
+      <span class="summary-day">Week 36 - Day 4</span> | Full Stack Project - Part 14</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  Study Part 14 of the Full Stack Project series:
 
-  - **Part 1:** Authentication & Security
-  - **Part 2:** Authentication & Security
+  **Testing Express Applications**
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/9dd8f9d4cd986ccddce5578c0d59415e42b7391b){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week36/assets/day05){:target="_blank"}.
+  By the end of this lesson, students will be able to:
 
-  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
-  **References & Resources:**
+  * Understand software testing fundamentals
+  * Write unit tests
+  * Write integration tests
+  * Test Express routes
+  * Test validation logic
+  * Test authentication flows
+  * Mock dependencies
+  * Understand test isolation
+  * Build reliable applications
+  * Develop a testing mindset
 
-  - [POST Method details](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST){:target="_blank"} (encoding, etc.)  
-    - [Percent encoding](https://en.wikipedia.org/wiki/Percent-encoding){:target="_blank"}  
-    - Base64 Encoding/Decoding  
-      - [https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa](https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa){:target="_blank"}  
-      - [https://developer.mozilla.org/en-US/docs/Web/API/Window/atob](https://developer.mozilla.org/en-US/docs/Web/API/Window/atob){:target="_blank"}  
-    - Be very careful with the test data and accounts that you use during development/debugging. It’s important for this data and accounts not ending up in production. (Especially the DB accounts with weak passwords)  
-    - [HTTP Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie){:target="_blank"}  
-    - **ALWAYS REMEMBER: "No data from the browser is trustworthy"**  
-    - **When the user logs out, the cookie must always be removed or invalidated.**
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - ➡️ **Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}**
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
-### Exercises
+<!-- Exercises -->
 
-  Here's your challenges for today:
+<!-- Extra Resources -->
 
-  - Find out all the appropriate HTTP status codes and make sure that all endpoints send back the appropriate codes, e.g. 404, 200, 401, 302, etc.  
-  - Learn about the differences between the various encoding schemes: percent encoding, URI encoding, base64, etc.  
-    - [https://stackoverflow.com/questions/10267597/url-encode-vs-base64-encoding-usages](https://stackoverflow.com/questions/10267597/url-encode-vs-base64-encoding-usages){:target="_blank"}  
-  - Explore cookies in-depth and try out things, deal with more `key=value` pairs, like parsing multiple cookies and restricting cookies to particular paths and setting an expiration date  
-    - References: [https://stackoverflow.com/a/20912911/4861760](https://stackoverflow.com/a/20912911/4861760){:target="_blank"}  
-  - Research: how to detect cookie tampering  
-    - [https://stackoverflow.com/questions/6230565/how-to-prevent-users-from-modifying-cookie-values](https://stackoverflow.com/questions/6230565/how-to-prevent-users-from-modifying-cookie-values){:target="_blank"}  
-  - CHALLENGE: secure the cookie authentication mechanism by introducing hashing [(learn/Cookie.Tampering.101.md)](https://github.com/in-tech-gration/build-a-cms-2024/blob/9dd8f9d4cd986ccddce5578c0d59415e42b7391b/learn/Cookie.Tampering.101.md){:target="_blank"}
+<!-- Sources and Attributions -->
+  
+</details>
 
-  - Use Tailwind CSS to prettify the Post pages! (Pick a ready made template)
+<hr class="mt-1">
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week36/progress/progress.draft.w36.d05.csv**
+<!-- Week 36 - Day 5 | Full Stack Project - Part 15 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 36 - Day 5</span> | Full Stack Project - Part 15</h2>
+  </summary>
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+### Schedule
 
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Study Part 15 of the Full Stack Project series:
+
+  **Deployment, Production & Launching Your CMS**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand deployment fundamentals
+  * Prepare applications for production
+  * Use environment variables correctly
+  * Configure production databases
+  * Serve applications securely
+  * Understand reverse proxies
+  * Understand HTTPS
+  * Implement logging strategies
+  * Monitor applications
+  * Deploy a complete CMS
+
+ - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+ - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+ - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+ - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+ - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+ - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+ - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+ - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+ - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+ - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+ - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+ - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+ - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+ - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+ - ➡️ **Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}**
+
+<!-- Summary -->
+
+<!-- Exercises -->
 
 <!-- Extra Resources -->
 

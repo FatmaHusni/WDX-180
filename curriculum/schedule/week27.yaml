@@ -1,21 +1,22 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Advanced JavaScript"
-header_image: week27/battleship.png
+title: "More Web APIs"
+header_image: week27/Web.APIs.png
+version: 2.0
 schedule: 
   days:
-    1: # 
+    1: # Debugging Canvas API & Drag and Drop API
       # file://./../modules/javascript/misc/_w27d01/_w27d01.md
       module: javascript/misc/_w27d01/_w27d01.md
-    2: # 
+    2: # Drag and Drop API & A11y
       # file://./../modules/javascript/misc/_w27d02/_w27d02.md
       module: javascript/misc/_w27d02/_w27d02.md
-    3: # 
-      # file://./../modules/javascript/misc/_w27d03/_w27d03.md
-      module: javascript/misc/_w27d03/_w27d03.md
-    4: # 
-      # file://./../modules/javascript/misc/_w27d04/_w27d04.md
-      module: javascript/misc/_w27d04/_w27d04.md
-    5: # 
+    3: # Solving Software Challenges
       # file://./../modules/javascript/misc/_w27d05/_w27d05.md
       module: javascript/misc/_w27d05/_w27d05.md
+    4: # FileReader API
+      # file://./../modules/javascript/misc/_w27d03/_w27d03.md
+      module: javascript/misc/_w27d03/_w27d03.md
+    5: # Games using Canvas API
+      # file://./../modules/javascript/misc/_w28d05/_w28d05.md
+      module: javascript/misc/_w28d05/_w28d05.md

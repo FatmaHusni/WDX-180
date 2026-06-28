@@ -25,11 +25,11 @@ title: Week 23 | React JS
 
   </h2>
 
-  <span>Updated: 21/3/2025</span>
+  <span>Updated: 18/3/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 23 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 23 | React JS
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -59,8 +66,8 @@ title: Week 23 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** useState Hook
-  - **Part 2:** useRef & useEffect Hooks
+  - `useState` Hook
+  - `useRef` & `useEffect` Hooks
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week23/assets/day01/code){:target="_blank"}
 
@@ -72,12 +79,16 @@ title: Week 23 | React JS
   **References & Resources:**
 
   - **Hooks**  
-    - [**React Hooks Lifecycle**](https://wavez.github.io/react-hooks-lifecycle/){:target="_blank"}  
-      - [**Another view of the Component lifecycle**](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week23/assets/day01/diagrams/ReactHooksLifecycle.png){:target="_blank"}  
     - **A family of built-in functions in React that:**  
       - **are prefixed with “use”: useState, useRef, useEffect**  
       - **should ONLY be used inside Component functions**  
       - **should NOT be conditionally executed**  
+
+    - [**React Hooks Lifecycle**](https://wavez.github.io/react-hooks-lifecycle/){:target="_blank"}  
+      - [**Another view of the Component lifecycle**](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week23/assets/day01/diagrams/ReactHooksLifecycle.png){:target="_blank"}
+
+  [![](./assets/react-hooks-lifecycle-screenshot.jpg)](https://wavez.github.io/react-hooks-lifecycle/){:target="_blank"}
+
   - **JavaScript:**  
     - **Highly recommended: [https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md){:target="_blank"}**  
       - I don’t believe *“Async and Performance”* and *“ES6 and Beyond”* are relevant today as they are a bit outdated these days, so you can skip them.  
@@ -112,7 +123,6 @@ title: Week 23 | React JS
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week23/progress/progress.draft.w23.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -181,8 +191,8 @@ title: Week 23 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** useEffect & Fetch API
-  - **Part 2:** Context API
+  - useEffect & Fetch API
+  - Context API
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week23/assets/day03/code){:target="_blank"}
 
@@ -234,7 +244,6 @@ title: Week 23 | React JS
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week23/progress/progress.draft.w23.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -305,7 +314,6 @@ title: Week 23 | React JS
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -331,8 +339,9 @@ title: Week 23 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Handling Errors, Context API and useReducer (Part 1) 
-  - **Part 2:** Handling Errors, Context API and useReducer (Part 2)
+  - Handling Errors
+  - Context API
+  - useReducer
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week23/assets/day05/code){:target="_blank"}
 
@@ -360,7 +369,6 @@ title: Week 23 | React JS
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week23/progress/progress.draft.w23.d05.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 

@@ -25,7 +25,7 @@ title: Week 17 | Objects
 
   </h2>
 
-  <span>Updated: 1/2/2026</span>
+  <span>Updated: 4/2/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -176,8 +176,8 @@ title: Week 17 | Objects
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Q&A
-  - **Part 2:** The Real Function Constructors and prototype
+  - **Part 1:** The Real Function Constructors and prototype
+  - **Part 2:** Q&A
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week17/assets/code/day03){:target="_blank"}
 
@@ -192,6 +192,12 @@ title: Week 17 | Objects
     - What changes with the new keyword?  
       - 1) We get a new object returned from the call (no need for return statement). Most of the times, we don’t want a return statement. The constructor always returns the object.  
   - Functions that are intended to be used as constructors (called with the new keyword) **should ALWAYS START WITH A CAPITAL LETTER**.
+
+  Q: What is and why use the `getAttribute()`? How can we keep the state?  
+    - We can use the HTML attributes to store (String) data  
+    - We can use the `JSON.stringify` to convert non-String values to Strings and store them in the attributes  
+    - We can use the `JSON.parse` to get the string back and turn it into the original type  
+    - **The important rule** is to prefix all custom HTML attributes with: **data-** or **x-**
 
   **Suggested material for study & practice:**
 

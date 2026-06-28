@@ -25,11 +25,11 @@ title: Week 20 | Node JS Web Server
 
   </h2>
 
-  <span>Updated: 26/2/2025</span>
+  <span>Updated: 25/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 20 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 20 | Node JS Web Server
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -130,7 +137,6 @@ title: Week 20 | Node JS Web Server
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -198,7 +204,6 @@ title: Week 20 | Node JS Web Server
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -222,6 +227,9 @@ title: Week 20 | Node JS Web Server
 ### Study Plan
 
   ![](./assets/express.jpg)
+
+  - Watch the lecture: [A Quick Introduction to Express.JS](https://youtu.be/Dx8FJcLUwBI){:target="_blank"}
+    - Lecture code can be found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week20/assets/day03/intro-to-express){:target="_blank"}
 
   - Study (read **and** practice) the [**Introducing Express**](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#introducing_express){:target="_blank"} section from MDN's `Web Frameworks` documentation page.
 
@@ -330,7 +338,6 @@ title: Week 20 | Node JS Web Server
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week20/progress/progress.draft.w20.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 ### Extra Resources
 
@@ -483,7 +490,6 @@ title: Week 20 | Node JS Web Server
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 ### Sources and Attributions
@@ -574,7 +580,6 @@ title: Week 20 | Node JS Web Server
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week20/progress/progress.draft.w20.d05.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 

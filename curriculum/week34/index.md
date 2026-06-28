@@ -1,11 +1,11 @@
 ---
-title: Week 34 | Mini CMS Project
+title: Week 34 | Full Stack Project
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 34-Mini CMS Project | slugify }}">
-  <span class="week-prefix">Week 34 |</span> Mini CMS Project
+<h1 id="{{ Week 34-Full Stack Project | slugify }}">
+  <span class="week-prefix">Week 34 |</span> Full Stack Project
 </h1>
 
 <img src="assets/mini.cms.jpg" />
@@ -25,11 +25,11 @@ title: Week 34 | Mini CMS Project
 
   </h2>
 
-  <span>Updated: 13/6/2025</span>
+  <span>Updated: 1/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 34 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -40,41 +40,61 @@ title: Week 34 | Mini CMS Project
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
-<!-- Week 34 - Day 1 | Building a Mini CMS - Part 1 -->
+<!-- Week 34 - Day 1 | Full Stack Project - Part 1 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 1</span> | Building a Mini CMS - Part 1</h2>
+      <span class="summary-day">Week 34 - Day 1</span> | Full Stack Project - Part 1</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  Study Part 1 of the Full Stack Project series:
 
-  - **Part 1:** What is a Content Management System (CMS)?
-  - **Part 2:** Setting up our Node.js project
+  **Express + EJS Fundamentals**
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/62f0d9743c8abe36e4a351c42b98c06310ff0aa9){:target="_blank"}
+  By the end of this lesson, students will be able to:
 
-  **References & Resources:**
+  * Explain the difference between a web server and a web application.
+  * Explain what Express.js does and why it exists.
+  * Create and configure an Express application.
+  * Understand HTTP requests and responses.
+  * Serve static files using Express middleware.
+  * Configure EJS as a template engine.
+  * Render dynamic HTML using data from JavaScript.
+  * Create reusable layouts and partials.
+  * Understand the purpose of middleware.
+  * Build a small server-rendered application from scratch.
 
-  - [How to set up a Node server with TypeScript in 2024](https://www.learnwithjason.dev/blog/modern-node-server-typescript-2024/){:target="_blank"}  
-  - [Learn with Jason](https://www.learnwithjason.dev/episodes/){:target="_blank"}  
-  - [VSCode Excalidraw Extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor){:target="_blank"}  
-  - TypeScript definitions for [node http](https://microsoft.github.io/PowerBI-JavaScript/modules/_node_modules__types_node_http_d_._http_.html){:target="_blank"} *(@types/node*)  
-  - [How to use TypeScript in Node.js](https://www.executeprogram.com/courses/typescript-basics/articles/how-to-use-typescript-in-node-js){:target="_blank"}  
-  - Some more Node/TypeScript boilerplates and guides  
-    - [https://betterstack.com/community/guides/scaling-nodejs/nodejs-typescript/](https://betterstack.com/community/guides/scaling-nodejs/nodejs-typescript/){:target="_blank"}  
-    - [https://github.com/jsynowiec/node-typescript-boilerplate](https://github.com/jsynowiec/node-typescript-boilerplate){:target="_blank"}
-  - [Try WordPress Playground](https://wordpress.org/playground/){:target="_blank"}
+  - ➡️ **Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}**
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -88,11 +108,11 @@ title: Week 34 | Mini CMS Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 2 | System Design -->
+<!-- Week 34 - Day 2 | Full Stack Project - Part 2 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 2</span> | System Design</h2>
+      <span class="summary-day">Week 34 - Day 2</span> | Full Stack Project - Part 2</h2>
   </summary>
 
 ### Schedule
@@ -102,21 +122,38 @@ title: Week 34 | Mini CMS Project
 
 ### Study Plan
 
-  ![](./assets/system.design.jpg)
+  Study Part 2 of the Full Stack Project series:
 
-  Since we are going to be designing our Database soon, here are two really
-  interesting videos that will walk you through designing a system 
-  (an Instagram-like app in one case, a calendar app in the other). 
+  **Planning, Architecture & Diagrams**
 
-  You can learn a lot from this process, such as thinking about the system 
-  from a high level and breaking it up in different modules and deciding 
-  on the Database entities (tables) and Schema (columns and types).
+  By the end of this lesson, students will be able to:
 
-  Enjoy and gain some insights!
+  * Understand software architecture fundamentals
+  * Explain separation of concerns
+  * Understand MVC architecture
+  * Design a relational database schema
+  * Understand primary keys and relationships
+  * Organize an Express application into modules
+  * Use Express Router
+  * Design route structures before implementation
+  * Create architecture diagrams
+  * Plan a CRUD application before writing code
 
-  - [Design Instagram: 30'](https://www.youtube.com/watch?v=VJpfO6KdyWE){:target="_blank"} 
-
-  - [Design Calendar Application: 25'](https://www.youtube.com/watch?v=39eAITqeu7g){:target="_blank"}
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - ➡️ **Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}**
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -130,69 +167,11 @@ title: Week 34 | Mini CMS Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 3 | Object Relational Mapping -->
+<!-- Week 34 - Day 3 | Full Stack Project - Part 3 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 3</span> | Object Relational Mapping</h2>
-  </summary>
-
-### Schedule
-
-  - **Watch the lectures**
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
-
-### Study Plan
-
-  ![](./assets/modular.architecture.jpg)
-
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** Databases & ORMs (Object Relational Mapping)
-  - **Part 2:** Modular architecture and creating and populating Database tables with data
-
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/7a20932556ee71cef0efe498161aaadfcb0d2e17){:target="_blank"}
-
-  **References & Resources:**
-
-  - [Dark Reader Chrome and Firefox extension](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?authuser=1){:target="_blank"}  
-    - [GitHub](https://github.com/darkreader/darkreader){:target="_blank"}  
-    - [**ORM: Object–relational mapping**](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping){:target="_blank"}  
-      - **Examples of ORMs:**  
-        - [https://sequelize.org/](https://sequelize.org/){:target="_blank"}  
-        - [https://www.npmjs.com/package/sqlite3orm\#selectinsertupdatedelete-using-daos](https://www.npmjs.com/package/sqlite3orm#selectinsertupdatedelete-using-daos){:target="_blank"}  
-        - [https://www.npmjs.com/package/@mikro-orm/better-sqlite](https://www.npmjs.com/package/@mikro-orm/better-sqlite){:target="_blank"}  
-        - [https://github.com/thebinarysearchtree/flyweight](https://github.com/thebinarysearchtree/flyweight){:target="_blank"}  
-    - Modular Architecture  
-      - [Think simple](https://o.quizlet.com/8.9Oa8PTRRKzrhUh-bE8mA_b.jpg){:target="_blank"}  
-      - Google for  “modular architecture”
-
-<!-- Summary -->
-
-### Exercises
-
-  - Search for patterns to connect the web server module and the database module  
-  - Study the `sqlite3` API documentation
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week34/progress/progress.draft.w34.d03.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 34 - Day 4 | Practice Day -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 34 - Day 4</span> | Practice Day</h2>
+      <span class="summary-day">Week 34 - Day 3</span> | Full Stack Project - Part 3</h2>
   </summary>
 
 ### Schedule
@@ -202,9 +181,37 @@ title: Week 34 | Mini CMS Project
 
 ### Study Plan
 
-  Today is practice day. Practice on the topics and coding challenges
-  for the Mini CMS project we are working on and spend some time on MDN
-  and other Internet resources to read more about the technologies involved.
+  Study Part 3 of the Full Stack Project series:
+
+  **Public Routes & Basic CRUD**
+
+  By the end of this lesson, students will be able to:
+
+  * Create a SQLite database
+  * Design and create tables
+  * Seed a database with sample data
+  * Connect Express to SQLite
+  * Execute SQL queries
+  * Display records using EJS
+  * Understand basic CRUD database operations
+  * Separate database logic from routes
+  * Build the "Read" portion of a CMS
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - ➡️ **Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}**
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -218,90 +225,113 @@ title: Week 34 | Mini CMS Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 5 | Mini CMS: Database Connection -->
+<!-- Week 34 - Day 4 | Full Stack Project - Part 4 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 5</span> | Mini CMS: Database Connection</h2>
+      <span class="summary-day">Week 34 - Day 4</span> | Full Stack Project - Part 4</h2>
   </summary>
 
 ### Schedule
 
+  - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Let's practice! Skip to the `Exercises` section below for 
-  a guide on what to code today.
+  Study Part 4 of the Full Stack Project series:
+
+  **Single Product Pages & Database-Driven Routing**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand route parameters
+  * Retrieve URL parameters using Express
+  * Query a database for a single record
+  * Handle missing records gracefully
+  * Build dynamic detail pages
+  * Create reusable database queries
+  * Understand 404 responses
+  * Create database-driven navigation
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - ➡️ **Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}**
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
-### Exercises
+<!-- Exercises -->
 
-  Take this opportunity and try to work on the CMS project (you can find the code to start from [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w34d05/assets){:target="_blank"}) to accomplish the following tasks:
+<!-- Extra Resources -->
 
-  - Create a new `src/db/basic.ts` file and paste the official `sqlite3` example found here: [https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file#usage](https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file#usage){:target="_blank"}. We'll just keep the other database-related files aside for now.
+<!-- Sources and Attributions -->
+  
+</details>
 
-  - Instead of creating a sample `lorem` table, like the example, update the code and create 2 tables that will hold our CMS `Users` and their Blog `Posts`. Make sure that these two tables have a one-to-many relation, where one `User` can create many `Posts`. Make use of the `Primary/Foreign Keys` to connect the two tables and populate then with a few sample users and posts. ChatGPT can help you come up with some sample user names, blog post titles and sample content.
+<hr class="mt-1">
 
-  - Think carefully about the Schema of these two tables (column names and value types).
+<!-- Week 34 - Day 5 | Full Stack Project - Part 5 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 34 - Day 5</span> | Full Stack Project - Part 5</h2>
+  </summary>
 
-  - Rename `src/index.ts` to `src/web.ts` and create a new file named `src/index.ts`. Find a way to import both the `src/db/basic.ts` and `src/web.ts` into `src/index.ts` and "wire" them up correctly so that the web server starts listening when the database has been initialized and the table creation (CREATE TABLE) and population (INSERT INTO) have completed. You will have to create some functions and of course make use of some callbacks in order to achieve that. 
+### Schedule
 
-  - Create another route named `/blog` that will read the contents of the `Posts` table and send the contents back to the user in the form of an HTML page.
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-  Here is some code to get you started:
+### Study Plan
 
-  index.mjs:
+  Study Part 5 of the Full Stack Project series:
 
-  ```js
-  import webInit from "./web.mjs";
-  import dbInit from "./db.mjs";
+  **Creating Products (CREATE)**
 
-  dbInit( webInit );
-  ```
+  By the end of this lesson, students will be able to:
 
-  web.mjs:
+  * Build HTML forms using EJS
+  * Understand GET vs POST
+  * Process form submissions
+  * Parse form data using Express middleware
+  * Validate user input
+  * Insert records into SQLite
+  * Handle validation errors
+  * Redirect users after successful actions
+  * Understand the POST-Redirect-GET pattern
+  * Build the Create portion of CRUD
 
-  ```js
-  export default function webInit(db){
-    console.log("Web server initialized!");
-    function listen(){
-      console.log("Table:", db);
-    }
-    listen();
-  }
-  ```
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - ➡️ **Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}**
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
-  db.mjs
+<!-- Summary -->
 
-  ```js
-  export default function dbInit(cb){
-    console.log("Database server initialized!");
-    setTimeout(()=>{
-      console.log("Table ready!");
-      cb({ table: "Users" });
-    },500);
-  }
-  ```
-
-  Run: `node index.mjs`
-
-  Output:
-
-  ```
-  Database server initialized!
-  Table ready!
-  Web server initialized!
-  Table: { table: 'Users' }
-  ```
-
-  That's it!
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week34/progress/progress.draft.w34.d05.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
+<!-- Exercises -->
 
 <!-- Extra Resources -->
 

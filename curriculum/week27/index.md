@@ -1,14 +1,14 @@
 ---
-title: Week 27 | Advanced JavaScript
+title: Week 27 | More Web APIs
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 27-Advanced JavaScript | slugify }}">
-  <span class="week-prefix">Week 27 |</span> Advanced JavaScript
+<h1 id="{{ Week 27-More Web APIs | slugify }}">
+  <span class="week-prefix">Week 27 |</span> More Web APIs
 </h1>
 
-<img src="assets/battleship.png" />
+<img src="assets/Web.APIs.png" />
 
 <div class="week-controls">
 
@@ -25,11 +25,11 @@ title: Week 27 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 25/4/2025</span>
+  <span>Updated: 14/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 27 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 27 | Advanced JavaScript
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -57,31 +64,21 @@ title: Week 27 | Advanced JavaScript
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** Debugging Canvas API
-  - **Part 2:** Drag and Drop API
+  Watch the [lecture on the Drag and Drop Browser API](https://youtu.be/hYum59UJ2vk){:target="_blank"}.
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week27/assets/day01/drag-and-drop.html){:target="_blank"}
 
   **References & Resources:**
 
   - [**Slides**](https://kostasx.github.io/EventLoop/frontend/html5/apis.html#/3){:target="_blank"} *(contains code and resources at the end)*  
-  - **Lesson of the day: RTFM!!! Read the full MDN!!!**  
-    - [How to remove the clip of a region in html 5 canvas](https://stackoverflow.com/questions/25282793/how-to-remove-the-clip-of-a-region-in-html-5-canvas){:target="_blank"}  
-    - Alternative: the [reset()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/reset){:target="_blank"} context 2D  
   - [**DataTransfer**](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer){:target="_blank"}  
   - [**HTMLImageElement**](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement){:target="_blank"}  
-    - [**HTMLImageElement.complete**](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/complete){:target="_blank"} **property**  
-  - [**Canvas revealing effect using requestAnimationFrame**](https://jsfiddle.net/Mekire/wq6ynruq/){:target="_blank"}  
-    - This also includes a darker version of the revealing image beneath the clipping region
+    - [**HTMLImageElement.complete**](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/complete){:target="_blank"} **property**
 
 <!-- Summary -->
 
 ### Exercises
 
-  - Use the **__proto__** object property to explore the Prototypal inheritance chain   
-    - The **__proto__** should ONLY be used for debugging and educational purposes. You should **NEVER** use it in production.  
   - Make the draggable element paint the drop target with its background color  
   - Explore and recreate the [DnD List](https://kostasx.github.io/EventLoop/frontend/html5/webapis/drag-and-drop/resources/tasks-board.html){:target="_blank"}
     - [Source code](https://raw.githubusercontent.com/kostasx/EventLoop/master/frontend/html5/webapis/drag-and-drop/resources/tasks-board.html){:target="_blank"}  
@@ -91,7 +88,6 @@ title: Week 27 | Advanced JavaScript
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week27/progress/progress.draft.w27.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -137,11 +133,64 @@ title: Week 27 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 27 - Day 3 | FileReader API -->
+<!-- Week 27 - Day 3 | Solving Software Challenges -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 27 - Day 3</span> | FileReader API</h2>
+      <span class="summary-day">Week 27 - Day 3</span> | Solving Software Challenges</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  > "Please build 'this' thing!"
+
+
+
+  How do you approach a new software challenge? How do you solve a novel problem? Here are some **tips and resources for solving software challenges/problems**:
+
+  - **Break/split the problem into smaller problems/tasks**  
+  - **Work on a simpler version of a problem**  
+    - This rule applies both to the original problem and the sub-problems  
+    - Stop and think whether the code that you wrote will scale and work equally well with a more advanced version of the problem   
+  - Plan & design  
+    - Use diagrams  
+    - Use pen and paper  
+    - Think outside the code  
+  - Whenever you are working on a challenge that involves something that will be displayed to the user(s), you can begin by working out the problem of displaying the app  
+    - For displaying things, Frontend devs have a lot of opportunities and lots of different technologies at their hand:  
+      - SVG (XML-based Vector graphics)  
+      - HTML + CSS  
+      - Canvas API  
+      - Images (bitmap)  
+      - Media such as `<video />`, `<audio />`  
+      - WebGL (?)
+
+  Study: [How to Solve Problems](https://www.naftaliharris.com/blog/problem-solving/){:target="_blank"}
+
+  Study: [Coding Math: Episode 58 - Array Math](https://www.youtube.com/watch?v=75Cbkoo4Gwg){:target="_blank"}
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 27 - Day 4 | FileReader API -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 27 - Day 4</span> | FileReader API</h2>
   </summary>
 
 ### Schedule
@@ -154,8 +203,7 @@ title: Week 27 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** FileReader API
-  - **Part 2:** FileReader API
+  - FileReader API
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week27/assets/day03/FileReader.html){:target="_blank"}
 
@@ -183,17 +231,24 @@ title: Week 27 | Advanced JavaScript
   - [https://javascript.info/file](https://javascript.info/file){:target="_blank"}
   - [File API](https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications){:target="_blank"}
 
+  **Student Questions:**
+
+  - Q: _"Can we store the files in some way? (think Storage APIs)"_
+    - A: You can read/encode files as Base64 strings and store them on the localStorage  
+  - Q: _"Can we read files from a directory or read a directory or read a hard drive?"_  
+    - A: You can explore (with caution) the [File System API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API){:target="_blank"}  
+    - SO: [Is it possible to read files from a directory using javascript?](https://stackoverflow.com/questions/11332042/is-it-possible-to-read-files-from-a-directory-using-javascript){:target="_blank"}
+
 <!-- Summary -->
 
 ### Exercises
 
   Build on the examples we’ve worked on and share any questions or apps that you’ve built.
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week27/progress/progress.draft.w27.d03.csv**
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week27/progress/progress.draft.w27.d04.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -202,159 +257,31 @@ title: Week 27 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 27 - Day 4 | Practice Day -->
+<!-- Week 27 - Day 5 | Games using Canvas API -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 27 - Day 4</span> | Practice Day</h2>
+      <span class="summary-day">Week 27 - Day 5</span> | Games using Canvas API</h2>
   </summary>
 
 ### Schedule
 
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 27 - Day 5 | Battleship Game - Part 1 -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 27 - Day 5</span> | Battleship Game - Part 1</h2>
-  </summary>
-
-### Schedule
-
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  ![](./assets/battleship-design.jpg)
+  It's a great idea to study some tutorial videos on building games that are based on the Canvas API and grab some ideas and good practices such as using the prototype and more.
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  Here are two fantastic videos to study and replicate:
 
-  - **Part 1:** Battleship game (problem solving procedure)
-  - **Part 2:** Battleship game (from design board to code)
+  [Mary Live Codes A JavaScript Game From Scratch](https://www.youtube.com/watch?v=hbKN-9o5_Z0){:target="_blank"}
 
-  You can find the lecture code and game requirements [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week27/assets/day05/code){:target="_blank"} and the Excalidraw diagram [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week27/assets/battleship.excalidraw.png){:target="_blank"}.
-
-  **Rules for BattleShip (a Milton Bradley Game)**
-
-  **Game Objective**
-
-  The object of Battleship is to try and sink all of the other player's before they sink all of your ships. All of the other player's ships are somewhere on his/her board.  You try and hit them by calling out the coordinates of one of the squares on the board.  The other player also tries to hit your ships by calling out coordinates.  Neither you nor the other player can see the other's board so you must try to guess where they are.  Each board in the physical game has two grids:  the lower (horizontal) section for the player's ships and the upper part (vertical during play) for recording the player's guesses.
-
-  **Starting a New Game**
-
-  Each player places the 5 ships somewhere on their board.  The ships can only be placed vertically or horizontally. Diagonal placement is not allowed. No part of a ship may hang off the edge of the board.  Ships may not overlap each other.  No ships may be placed on another ship. 
-
-  Once the guessing begins, the players may not move the ships.
-
-  The 5 ships are:  
-
-  - Carrier (occupies 5 spaces)
-  - Battleship (4)
-  - Cruiser (3)
-  - Submarine (3)
-  - Destroyer (2)
-
-  
-
-  **Playing the Game**
-
-  Player's take turns guessing by calling out the coordinates. The opponent responds with "hit" or "miss" as appropriate.  Both players should mark their board with pegs:  red for hit, white for miss. For example, if you call out F6 and your opponent does not have any ship located at F6, your opponent would respond with "miss".  You record the miss F6 by placing a white peg on the lower part of your board at F6.  Your opponent records the miss by placing.
-
-  When all of the squares that one your ships occupies have been hit, the ship will be sunk.   You should announce "hit and sunk".  In the physical game, a red peg is placed on the top edge of the vertical board to indicate a sunk ship. 
-
-  As soon as all of one player's ships have been sunk, the game ends.
-
-  **Questions**
-
-  - How can we send data (files) from the Frontend to the Backend (server, database, etc.)  
-    - Most of the time we use the **XMLHttpRequest** object or the **Fetch API** to post the file data back to the server. We can also use **plain HTML form** to send the data to the server.
-
-  **References & Resources:**
-
-  - [**https://www.blibliki.com/**](https://www.blibliki.com/){:target="_blank"}  
-  - [**Open Game Art**](https://opengameart.org/){:target="_blank"}  
-    - Search for “battleship” => [results](https://opengameart.org/content/sea-warfare-set-ships-and-more){:target="_blank"}  
-  - **Tips for solving software challenges/problems** (problems of the type “build this thing”)  
-    - **Break/split the problem into smaller problems/tasks**  
-    - **Work on a simpler version of a problem**  
-      - This rule applies both to the original problem and the sub-problems  
-      - Stop and think whether the code that you wrote will scale and work equally well with a more advanced version of the problem   
-    - Plan & design  
-      - Use diagrams  
-      - Use pen and paper  
-      - Think outside the code  
-    - Whenever you are working on a challenge that involves something that will be displayed to the user(s), you can begin by working out the problem of displaying the app  
-      - For displaying things, Frontend devs have a lot of opportunities and lots of different technologies at their hand:  
-        - SVG (XML-based Vector graphics)  
-        - HTML + CSS  
-        - Canvas API  
-        - Images (bitmap)  
-        - Media such as `<video />`, `<audio />`  
-        - WebGL (?)  
-    - Learn as much as you can about the requirements  
-      - [Game rules](https://www.cs.nmsu.edu/~bdu/TA/487/brules.htm){:target="_blank"}  
-      - [Board game image](https://media.printables.com/media/prints/157515/images/1472334_fcfca703-3f8e-48e8-a1a6-9e2962af1559/thumbs/inside/1280x960/jpg/large_display_battleship_02_157515.webp){:target="_blank"}  
-      - [Wikipedia article](https://en.wikipedia.org/wiki/Battleship_(game)){:target="_blank"}  
-      - Ask for the specifications  
-      - Real-life technical challenge requirements: Simplified naval combat.  
-        - 1. There **should be a button to start a new game**. Those. **at any time you can reset the game and start again**  
-        - 2. Players (Player1 Player2) take turns making their moves (in *hotseat mode: Hotseat play allows players to play a multiplayer game with only one copy of the game on only one device.*).  
-          - Show both users’ scores?  
-        - 3. **There should be information about which player is currently playing**  
-        - 4. The size of the playing field is 5x5 cells (we’ll keep 10x10)  
-        - 5. Ships are only single-deck, can be located on adjacent cells  
-          - They span a single row or column  
-        - 6. The game consists of three stages 1) Arrangement of ships 2) Game 3) Announcement of the winner  
-        - 1) Arrangement of ships:  
-        - Users take turns placing ships. That is, one playing field is displayed (first Player1, then Player2)  
-        - Each player must have 8 ships (5 ships)  
-        - Click on a cell = add ship cell, click again = clear the cell  
-        - To complete the placement, you must click on the 'Confirm' button, after which the placement of the next player's ships will begin  
-        - After completing the placement of Player2, the Game phase begins  
-        - 2) Game:  
-        - Before the start of each new turn, the following is displayed: the name of the current player and the 'start move' button (the playing fields are not displayed!)  
-        - During the turn, the player sees his field and the field of the enemy, but does not see the location of enemy ships (only attacked cells are shown)  
-        - The user selects one cell on the opponent's field (click - select, re-click - cancel) and press 'Attack'  
-        - If the user hit / did not hit the cell with an enemy ship - the message 'Killed' / 'Missed' is displayed and the cell of the enemy field is updated  
-        - The user makes an attack until the first miss, after which the attack becomes unavailable  
-        - If an attack is no longer available (the last one ended in a miss), a 'end turn' button appears  
-        - 3) Announcement of the winner:  
-        - The player who has no 'living' ships left loses  
-        - Displays the name of the winner and two playing fields  
-        - You can use a different field size or number of ships, it doesn't matter
+  [Coding an HTML5 Canvas Game (Pong) with JS in 5 min 30 sec](https://www.youtube.com/watch?v=KoWqdEACyLI){:target="_blank"}
 
 <!-- Summary -->
 
-### Exercises
-
-  Study: [How to Solve Problems](https://www.naftaliharris.com/blog/problem-solving/){:target="_blank"}
-
-  Study: [Coding Math: Episode 58 - Array Math](https://www.youtube.com/watch?v=75Cbkoo4Gwg){:target="_blank"}
-
-  Start implementing the game!
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week27/progress/progress.draft.w27.d05.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
+<!-- Exercises -->
 
 <!-- Extra Resources -->
 

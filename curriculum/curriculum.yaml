@@ -140,11 +140,11 @@ Syllabus:
           open: true
         27: # file:///./schedule/week27.yaml
           # title: "Node.js 3 & Relational Databases"
-          title: "Advanced JavaScript"
+          title: "More Web APIs"
           open: true
         28: # file:///./schedule/week28.yaml
           # title: "Express.js, REST APIs & GraphQL"
-          title: "Building a Battleship Game in JS"
+          title: "Advanced JavaScript"
           open: true
         29: # file:///./schedule/week29.yaml
           # title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
@@ -168,15 +168,18 @@ Syllabus:
           open: true
         34: # file:///./schedule/week34.yaml
           # title: "Blockchain & Web3"
-          title: "Mini CMS Project"
+          # title: "Mini CMS Project" # (v1.0)
+          title: "Full Stack Challenge" 
           open: true
         35: # file:///./schedule/week35.yaml
           # title: "Solo Project"
-          title: "Mini CMS Project"
+          # title: "Mini CMS Project" # (v1.0)
+          title: "Full Stack Challenge"
           open: true
         36: # file:///./schedule/week36.yaml
           # title: "Solo Project"
-          title: "Mini CMS Project"
+          # title: "Mini CMS Project" # (v1.0)
+          title: "Full Stack Challenge"
           open: true
         37: # file:///./schedule/week37.yaml
           title: The Road Ahead

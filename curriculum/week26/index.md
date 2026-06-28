@@ -25,7 +25,7 @@ title: Week 26 | Advanced JavaScript - Web APIs
 
   </h2>
 
-  <span>Updated: 11/11/2025</span>
+  <span>Updated: 4/4/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -39,6 +39,13 @@ title: Week 26 | Advanced JavaScript - Web APIs
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -87,7 +94,6 @@ title: Week 26 | Advanced JavaScript - Web APIs
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week26/progress/progress.draft.w26.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 ### Extra Resources
 
@@ -227,7 +233,6 @@ title: Week 26 | Advanced JavaScript - Web APIs
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -286,8 +291,7 @@ title: Week 26 | Advanced JavaScript - Web APIs
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** SVG
-  - **Part 2:** Canvas API & ImageData
+  - Canvas API & ImageData
 
   You can find the lecture code along with the SVG files [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week26/assets/day05/code){:target="_blank"}
 

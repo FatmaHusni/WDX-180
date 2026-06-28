@@ -70,6 +70,11 @@
 
   Make sure that a file v2.html exists in: `/assets/jekyll/_layouts/v2.html`
 
+## Jekyll | How to | Include Custom JS (site-wide)
+
+  - Create file in `assets/jekyll/js/`
+  - Include file via `<script src="{{ '/assets/jekyll/js/main.js' | relative_url }}"></script>` in one of the templates found in `/assets/jekyll/_layouts/`.
+
 ## Jekyll | How to | Include CSS & JS in a markdown file
 
   **Q: How do I load a CSS file in a particular markdown file?**
@@ -198,6 +203,10 @@
     async>
   </script>
   ```
+
+## Jekyll | How to | Customize Syntax Highlighting
+
+  - Edit `/assets/jekyll/_sass/rouge-base16-dark.scss`
 
 ## Jekyll | How to | Properly add Syntax Highlighting for JSX
 

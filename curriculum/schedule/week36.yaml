@@ -1,27 +1,22 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Mini CMS"
+title: "Full Stack Project"
 header_image: week36/mini.cms.jpg
+version: 2.0
 schedule: 
   days:
-    1: # Mini CMS: Create Post / List Posts
+    1: # 
       # file://./../modules/javascript/misc/_w36d01/_w36d01.md
       module: javascript/misc/_w36d01/_w36d01.md
-    2: # Practice Day
+    2: # 
       # file://./../modules/javascript/misc/_w36d02/_w36d02.md
       module: javascript/misc/_w36d02/_w36d02.md
-    3: # Auth
+    3: # 
       # file://./../modules/javascript/misc/_w36d03/_w36d03.md
       module: javascript/misc/_w36d03/_w36d03.md
-    4: # Practice Day
+    4: # 
       # file://./../modules/javascript/misc/_w36d04/_w36d04.md
       module: javascript/misc/_w36d04/_w36d04.md
-    5: # Protected Routes
+    5: # 
       # file://./../modules/javascript/misc/_w36d05/_w36d05.md
       module: javascript/misc/_w36d05/_w36d05.md
-
-## 🏆 WDX°180 COMPLETION CERTIFICATE
-
-# Enrolled students receive their digital certification for attending and completing all 3 parts of the WDX curriculum.
-
-# In order to receive this certificate, the student must have completed the first and second parts of the curriculum (WDX 60° and WDX 120° respectively).

@@ -1,14 +1,14 @@
 ---
-title: Week 35 | Advanced JavaScript
+title: Week 35 | Full Stack Project
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 35-Advanced JavaScript | slugify }}">
-  <span class="week-prefix">Week 35 |</span> Advanced JavaScript
+<h1 id="{{ Week 35-Full Stack Project | slugify }}">
+  <span class="week-prefix">Week 35 |</span> Full Stack Project
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/mini.cms.jpg" />
 
 <div class="week-controls">
 
@@ -25,11 +25,11 @@ title: Week 35 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 20/6/2025</span>
+  <span>Updated: 1/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 35 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -40,166 +40,60 @@ title: Week 35 | Advanced JavaScript
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
-<!-- Week 35 - Day 1 | Mini CMS Project -->
+<!-- Week 35 - Day 1 | Full Stack Project - Part 6 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 1</span> | Mini CMS Project</h2>
+      <span class="summary-day">Week 35 - Day 1</span> | Full Stack Project - Part 6</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  Study Part 6 of the Full Stack Project series:
 
-  - **Part 1:** Decompose our main app into a web server and a database file. Talk about asynchronous code.
-  - **Part 2:** Continue our talk on asynchronous code and async/await. Database PRIMARY and FOREIGN keys.
+  **Pagination**
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/595a9d765bccd8418c7d20926f7730d4b70e7b64){:target="_blank"}
+  By the end of this lesson, students will be able to:
 
-<!-- Summary -->
+  * Understand why pagination exists
+  * Implement OFFSET/LIMIT pagination
+  * Calculate page numbers
+  * Read query parameters
+  * Generate pagination links
+  * Display page counts
+  * Handle edge cases
+  * Understand the limitations of OFFSET pagination
+  * Compare OFFSET and Cursor Pagination
 
-### Exercises
-
-  - Study: how **import** (ESM) vs **require** (CommonJS) behave in Node (20+)  
-    - [Nodejs Docs](https://nodejs.org/api/esm.html#import-statements){:target="_blank"}  
-    - `await` is ONLY awaiting for Promises:  
-      - `await setTimeout()` `❌`  
-      - Convert the async function into a Promise using the `new Promise()` and then await: **await promisifiedSetTimeout()**  
-    - Make HTTP requests from the CLI: `cURL` and `wget`  
-      - cURL: curl [http://oxylabs.io](http://oxylabs.io){:target="_blank"}  
-    - [https://nodejs.org/en/learn/modules/anatomy-of-an-http-transaction](https://nodejs.org/en/learn/modules/anatomy-of-an-http-transaction){:target="_blank"}
-
-  - Tasks/Challenges:  
-    - Find out a better way to create and format the output HTML. For example, create a template function: `show_template(page_type,vars)`  
-    - Create and return a Login page  
-    - Make sure to handle the `req.url` splitting appropriately. Now, if there is no `?user_id=100`, the code breaks  
-    - Make sure that if the user is not found in the DB, you get some response  
-    - See if you can serve a favicon and some CSS along with the pages  
-    - Create a 404 page
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week35/progress/progress.draft.w35.d01.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 35 - Day 2 | Mini CMS Project -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 35 - Day 2</span> | Mini CMS Project</h2>
-  </summary>
-
-### Schedule
-
-  - **Practice on the topics and share your questions**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-### Exercises
-
-  Yesterday, we returned some HTML from the web server (web.ts). This was just a simple template String literal. We can abstract this in a function for better re-usability.
-
-  The web server checks the pathname using a basic if conditional and returns a custom HTML. By adding more paths, this code will become complicated and bloated. Maybe you can think of an abstraction so that the request pathname => appropriate HTML works better than the current implementation.
-
-  Starting from [this code](https://github.com/in-tech-gration/build-a-cms-2024/tree/595a9d765bccd8418c7d20926f7730d4b70e7b64){:target="_blank"} on the CMS repository, (1) create a function that returns the HTML content based on the pathname and some dynamic values. (2) Create an abstraction over the server router: `pathname => load data => render HTML`
-
-  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week35/progress/progress.draft.w35.d02.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 35 - Day 3 | Promises -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 35 - Day 3</span> | Promises</h2>
-  </summary>
-
-### Schedule
-
-  - **Watch the lectures**
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
-
-### Study Plan
-
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** More about Promises & the Promise Constructor
-  - **Part 2:** Chaining Promises
-
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promises.js){:target="_blank"} and [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promised.to.answer.questions.js){:target="_blank"}
-
-<!-- Summary -->
-
-### Exercises
-
-  - **Study:** [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise){:target="_blank"}  
-    - It’s important that you go through the whole document and probably more than once to fully understand the Promise concept.  
-      - Equally important to run all the examples mentioned there and tweak them to experiment with variations to get an even better and deeper understanding.  
-    - Explore number `#11` from the promises.js reference  
-      - Ref: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise/catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch){:target="_blank"}  
-      - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise/all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all){:target="_blank"}  
-      - Check all the static `Promise.*` methods
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week35/progress/progress.draft.w35.d03.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 35 - Day 4 | Practice Day -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 35 - Day 4</span> | Practice Day</h2>
-  </summary>
-
-### Schedule
-
-  - **Practice on the topics and share your questions**
-
-### Study Plan
-
-  Today is practice day. Practice on the topics covered so far
-  and share your thoughts, questions and insights.
-
-  Happy hacking!
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - ➡️ **Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}**
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -213,56 +107,231 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 5 | Q&A and Mini CMS Project -->
+<!-- Week 35 - Day 2 | Full Stack Project - Part 7 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 5</span> | Q&A and Mini CMS Project</h2>
+      <span class="summary-day">Week 35 - Day 2</span> | Full Stack Project - Part 7</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  Study Part 7 of the Full Stack Project series:
 
-  - **Part 1:** Logical AND and OR operators. How do we connect a domain to our hosted app? Website analytics.
-  - **Part 2:** SQL Injection. Mini CMS project: Creating a form for creating content.
+  **Search & Filtering**
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/4f942b64b86ff5164e8aa5d2bb516676134a8ca6){:target="_blank"} and the logical operator code [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/4f942b64b86ff5164e8aa5d2bb516676134a8ca6/learn/logical.operators.js){:target="_blank"}.
+  By the end of this lesson, students will be able to:
 
-  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.  
+  * Understand search and filtering concepts
+  * Read query parameters
+  * Build dynamic SQL queries safely
+  * Use SQL WHERE clauses
+  * Implement keyword search
+  * Filter by price ranges
+  * Combine search with pagination
+  * Preserve filters between pages
+  * Understand SQL indexing fundamentals
+  * Avoid SQL injection vulnerabilities
 
-  **References & Resources:**
-
-  - [SQLite Injection Attacks](https://www.tutlane.com/tutorial/sqlite/sqlite-injection-attacks){:target="_blank"}  
-  - [process.cwd()](https://nodejs.org/api/process.html#processcwd){:target="_blank"}, [__dirname](https://nodejs.org/docs/latest/api/modules.html#__dirname){:target="_blank"}, [__filename](https://nodejs.org/docs/latest/api/modules.html#__filename){:target="_blank"}  
-  - [https://stackoverflow.com/a/9874415/4861760](https://stackoverflow.com/a/9874415/4861760){:target="_blank"} `process.cwd()` vs `__dirname`  
-  - [https://nodejs.org/api/path.html#pathsep](https://nodejs.org/api/path.html#pathsep){:target="_blank"}  
-  - [https://nodejs.org/api/path.html#pathnormalizepath](https://nodejs.org/api/path.html#pathnormalizepath){:target="_blank"}  
-  - [https://nodejs.org/api/path.html#pathbasenamepath-suffix](https://nodejs.org/api/path.html#pathbasenamepath-suffix){:target="_blank"}
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - ➡️ **Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}**
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
 
 <!-- Summary -->
 
-### Exercises
+<!-- Exercises -->
 
-  - Highly recommended challenges:  
-    - Turn callback-based async functions into Promise-based functions  
-      - Work with both **.then().catch().finally()** and **async/await/try/catch/finally** syntax  
-        - Try to *promisify:*  
-          - Node.js fs methods, e.g. turn these `fs.writeFile(cb)`, `fs.readFile(cb)` into something like await `writeFileP()`, `await readFileP(filename)`  
-          - The navigator.geolocation methods: [getCurrentPosition](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition){:target="_blank"}  
-          - The `new Image()` load/error callbacks  
-          - The [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_XMLHttpRequest){:target="_blank"} object
+<!-- Extra Resources -->
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week35/progress/progress.draft.w35.d05.csv**
+<!-- Sources and Attributions -->
+  
+</details>
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+<hr class="mt-1">
 
+<!-- Week 35 - Day 3 | Full Stack Project - Part 8 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 35 - Day 3</span> | Full Stack Project - Part 8</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Study Part 8 of the Full Stack Project series:
+
+  **Updating Products (UPDATE)**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand the Update portion of CRUD
+  * Build edit forms
+  * Pre-populate forms with existing data
+  * Process update requests
+  * Execute SQL UPDATE statements
+  * Validate incoming data
+  * Handle missing records
+  * Reuse form templates
+  * Understand optimistic thinking versus defensive programming
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - ➡️ **Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}**
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 35 - Day 4 | Full Stack Project - Part 9 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 35 - Day 4</span> | Full Stack Project - Part 9</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Study Part 9 of the Full Stack Project series:
+
+  **Deleting Products (DELETE)**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand DELETE operations
+  * Build delete workflows
+  * Implement confirmation pages
+  * Execute SQL DELETE statements
+  * Handle missing records
+  * Understand soft deletes
+  * Understand hard deletes
+  * Prevent accidental data loss
+  * Build safer CRUD applications
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - ➡️ **Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}**
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 35 - Day 5 | Full Stack Project - Part 10 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 35 - Day 5</span> | Full Stack Project - Part 10</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Study Part 10 of the Full Stack Project series:
+
+  **File Uploads & Image Management**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand multipart form submissions
+  * Upload files using Express
+  * Use Multer middleware
+  * Store uploaded files
+  * Validate uploads
+  * Restrict file types
+  * Generate unique filenames
+  * Associate files with database records
+  * Display uploaded images
+  * Understand common upload security concerns
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day04.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day05.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day06.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day07.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day08.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day09.html){:target="_blank"}
+  - ➡️ **Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day10.html){:target="_blank"}**
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day11.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day12.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day13.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day14.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day15.html){:target="_blank"}
+
+<!-- Summary -->
+
+<!-- Exercises -->
 
 <!-- Extra Resources -->
 

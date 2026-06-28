@@ -25,7 +25,7 @@ title: Week 11 | Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch
 
   </h2>
 
-  <span>Updated: 11/11/2025</span>
+  <span>Updated: 3/4/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -39,6 +39,13 @@ title: Week 11 | Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -85,7 +92,6 @@ title: Week 11 | Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 ### Extra Resources
 
@@ -156,7 +162,6 @@ _Photo by [ROMAN ODINTSOV](https://www.pexels.com/photo/a-a-customer-receiving-a
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
@@ -214,10 +219,9 @@ _Photo by [ROMAN ODINTSOV](https://www.pexels.com/photo/a-a-customer-receiving-a
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 ### Extra Resources
 
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+  - Watch: [Get started with the Fetch API](https://www.youtube.com/watch?v=Ncs6QI4Z5BE){:target="_blank"} (8min)
 
 ### Sources and Attributions
 

@@ -1,21 +1,22 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Mini CMS Project"
+title: "Full Stack Project"
 header_image: week34/mini.cms.jpg
+version: 2.0
 schedule: 
   days:
-    1: # Mini CMS - Part 1
+    1: # 
       # file://./../modules/javascript/misc/_w34d01/_w34d01.md
       module: javascript/misc/_w34d01/_w34d01.md
-    2: # System Design
+    2: # 
       # file://./../modules/javascript/misc/_w34d02/_w34d02.md
       module: javascript/misc/_w34d02/_w34d02.md
-    3: # ORM
+    3: # 
       # file://./../modules/javascript/misc/_w34d03/_w34d03.md
       module: javascript/misc/_w34d03/_w34d03.md
-    4: # Practice Day
+    4: # 
       # file://./../modules/javascript/misc/_w34d04/_w34d04.md
       module: javascript/misc/_w34d04/_w34d04.md
-    5: # Mini CMS Coding
+    5: # 
       # file://./../modules/javascript/misc/_w34d05/_w34d05.md
       module: javascript/misc/_w34d05/_w34d05.md

@@ -1,21 +1,22 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Battleship Game"
-header_image: week28/battleship-game.png
+title: "Advanced JavaScript"
+header_image: week28/promises.and.websockets.jpg
+version: 2.0
 schedule: 
   days:
-    1: # 
-      # file://./../modules/javascript/misc/_w28d01/_w28d01.md
-      module: javascript/misc/_w28d01/_w28d01.md
-    2: # 
+    1: # Promises
+      # file://./../modules/javascript/misc/_w35d03/_w35d03.md
+      module: javascript/misc/_w35d03/_w35d03.md
+    2: # WebSockets
       # file://./../modules/javascript/misc/_w28d02/_w28d02.md
       module: javascript/misc/_w28d02/_w28d02.md
-    3: # 
+    3: # Data Wrangling
       # file://./../modules/javascript/misc/_w28d03/_w28d03.md
       module: javascript/misc/_w28d03/_w28d03.md
-    4: # 
+    4: # Practice Day
       # file://./../modules/javascript/misc/_w28d04/_w28d04.md
       module: javascript/misc/_w28d04/_w28d04.md
-    5: # 
-      # file://./../modules/javascript/misc/_w28d05/_w28d05.md
-      module: javascript/misc/_w28d05/_w28d05.md
+    5: # The Different Types of JS Functions Explained
+      # file://./../modules/javascript/misc/_w32d04/_w32d04.md
+      module: javascript/misc/_w32d04/_w32d04.md

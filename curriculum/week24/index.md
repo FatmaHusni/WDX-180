@@ -8,7 +8,7 @@ title: Week 24 | React JS
   <span class="week-prefix">Week 24 |</span> React JS
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/React.js.jpg" />
 
 <div class="week-controls">
 
@@ -25,11 +25,11 @@ title: Week 24 | React JS
 
   </h2>
 
-  <span>Updated: 26/3/2025</span>
+  <span>Updated: 27/3/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 24 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 24 | React JS
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -154,7 +161,6 @@ Good luck! 😎
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -179,6 +185,20 @@ Good luck! 😎
 
   Continue working on the React Coding Challenge (Quiz) to complete the 2nd part of WDX180.
 
+  If you want to take a short break from the coding challenge and dive deeper into React's internals, take a look at some (or all) of the following posts:
+
+  - [You might not need useEffect()](https://www.youtube.com/watch?v=V1f8MOQiHRw){:target="_blank"}
+
+  - [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect){:target="_blank"}
+
+  - [Why I Don’t Use useEffect In My React Components](https://www.youtube.com/watch?v=MFj_S0Nof90){:target="_blank"}
+
+  - [Every Beginner React Developer Makes This Mistake With State](https://www.youtube.com/watch?v=tz0fDABt67g){:target="_blank"}
+
+  - [You're Doing React Hooks Wrong, Probably](https://www.youtube.com/watch?v=56_OUG-0wgI){:target="_blank"}
+
+  The least you can do for now, is bookmark all of these resources and dedicate a few hours to study them at some point.
+
 <!-- Summary -->
 
 ### Exercises
@@ -189,12 +209,11 @@ You'll find the requirements/specifications and some guidelines here:
 
 [https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/){:target="_blank"}
 
-Good luck! :sunglasses:
+Good luck! 😎
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week24/progress/progress.draft.w24.d04.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -230,12 +249,11 @@ You'll find the requirements/specifications and some guidelines here:
 
 [https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/){:target="_blank"}
 
-Good luck! :sunglasses:
+Good luck! 😎
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week24/progress/progress.draft.w24.d05.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
